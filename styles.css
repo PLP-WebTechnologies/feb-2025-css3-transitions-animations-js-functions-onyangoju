@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 40px;
+    background-color: #f0f0f0;
+    background-image: url('https://images.pexels.com/photos/13268478/pexels-photo-13268478.jpeg?auto=compress&cs=tinysrgb&w=600');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.white-title {
+    color: white;
+    margin: 10px 0;
+}
+
+h1 {
+    color: #333;
+}
+
+.box {
+    width: 150px;
+    height: 150px;
+    margin: 20px auto;
+    background-color: #3498db;
+    color: white;
+    line-height: 150px;
+    font-size: 1.2em;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.5s ease, transform 0.5s ease;
+}
+
+/* CSS animation keyframes */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        background-color: #2ecc71; /* green */
+    }
+    33% {
+        transform: scale(1.2);
+        background-color: #3498db; /* blue */
+    }
+    66% {
+        transform: scale(1.1);
+        background-color: #ffff00; /* yellow */
+    }
+    100% {
+        transform: scale(1);
+        background-color: #2ecc71; /* green */
+    }
+}
+
+/* Class to trigger animation */
+.animate {
+    animation: pulse 1s ease forwards;
+}
+
+.navbar {
+    background-color: white;
+    padding: 10px 0;
+    margin-bottom: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.navbar ul li a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.navbar ul li a:hover {
+    text-decoration: underline;
+    color: #3498db;
+}
+
+body {
+    padding-top: 50px; /* to prevent content being hidden under fixed navbar */
+}
+
+.footer {
+    background-color: white;
+    color: black;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    font-weight: bold;
+    font-size: 1em;
+    text-align: center;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
